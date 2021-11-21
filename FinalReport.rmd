@@ -38,17 +38,17 @@ If not, then whose view differs from whom??
 ## Now with The Most data (fewer variables gives more data points)
 
 ```{r}
-dd2 <- mydata %>% group_by(race,cappun) %>% summarize(count=n()) %>% mutate(prcnt=count/sum(count))
+dd3 <- GSS %>% group_by(RACE,CAPPUN) %>% summarize(count=n()) %>% mutate(prcnt=count/sum(count))
 
 
 # the group_by followed by summarize(count=n())
 
-basicC <- ggplot(dd2,aes(x=race,y=count,fill=cappun))
+basicC <- ggplot(dd3,aes(x=RACE,y=count,fill=CAPPUN))
 basicC + geom_bar(stat="identity",position="dodge")
 
 #Now for percentage plot
 
-basicCC <- ggplot(dd2,aes(x=race,y=prcnt*100,fill=cappun)) 
+basicCC <- ggplot(dd3,aes(x=RACE,y=prcnt*100,fill=CAPPUN)) 
 basicCC + geom_bar(stat="identity", position = "dodge")
 ```
 
