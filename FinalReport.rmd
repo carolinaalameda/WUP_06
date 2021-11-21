@@ -5,21 +5,11 @@ date: "Fall 2021"
 output: html_document
 ---
 
-
-
-
-
-
-
 ```{r include=FALSE,echo=FALSE}
 require(tidyverse)
 require(tigerstats)
 require(knitr)
-require(foreign)
-GSS <-read.dta(file="GSS2018.dta")
-GSS <- droplevels(GSS)
-mydata <- select(GSS,race,cappun)
-mydata <- na.omit(mydata)
+GSS <-read.csv(file="GSScsv.csv", header=TRUE)
 ```
 
 # Introduction
