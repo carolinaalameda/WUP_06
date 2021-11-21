@@ -157,3 +157,10 @@ According to this, the first fisher test was between black and other. That test 
 # Discussion and Conclusion
 
 <!--Discussion and conclusion here.  If you found a relationship be sure to consider whether the relationship occurs because one of the variavbles causes the other, or whether they perhasps are related for some other reason.  Watch the chapter 6 videos from the GeorgeTown videos collection.!-->
+
+
+When we ran these statistical tests what was different was the "black" and "other" along with "black" and "white". We read the difference between capitol punishment between black, other, and white. In the second plot you can read the percentage from 100 on how much people from different races were for and against capitol punishment.
+
+
+
+
